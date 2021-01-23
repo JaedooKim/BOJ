@@ -6,12 +6,11 @@ import java.util.StringTokenizer;
 public class p_17298 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int n = Integer.parseInt(br.readLine());
+        int nge, n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
         StringBuilder sb = new StringBuilder();
 
         int inArr[] = new int[n];
-        int nge;
 
         for (int i = 0; i < inArr.length; i++) {
             inArr[i] = Integer.parseInt(st.nextToken());

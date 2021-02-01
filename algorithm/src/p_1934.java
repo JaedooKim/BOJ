@@ -7,14 +7,14 @@ public class p_1934 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int n = Integer.parseInt(br.readLine());
-        String[] strArr = new String[2];
+        String[] strArr;
         for (int i = 0; i < n; i++) {
             strArr = br.readLine().split(" ");
             int a = Integer.parseInt(strArr[0]);
             int b = Integer.parseInt(strArr[1]);
             int gcdValue = gcd(a, b);
             int lcmValue = a * b / gcdValue;
-            sb.append(lcmValue + "\n");
+            sb.append(lcmValue).append("\n");
 
         }
         System.out.println(sb);
